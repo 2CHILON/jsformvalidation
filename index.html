@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Signup Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class = "container">
+        <div class="form-box">
+            <h2 id = "form-title">Login</h2>
+
+            <p id ="success-message"  class = "success-message"></p>
+
+            <!--log in form-->
+            <form id = "login-form">
+                <div class="input-group">
+                    <input type="email" id="login-email" placeholder="Email">
+                    <span class = "error" id = "login-email-error"></span>
+                           
+                </div>
+                <div class = "input-group">
+                    <input type="password" id = "login-password" placeholder="Password">
+                    <span class = "error" id = "login-password-error"></span>
+                </div>
+                <button type = "submit">Login</button>
+                <p>Don't have an account? <a href="#" onclick="switchForm('signup')">Sign Up</a></p>
+            </form>
+
+            <!--Sign up form-->
+            <form id="signup-form" style = "display: none;">
+                <div class="input-group">
+                    <input type ="text" id ="signup-name" placeholder = "Full Name">
+                    <span class = "error" id = "signup-name-error"></span>
+                </div>
+                <div class="input-group">
+                    <input type="email" id = "signup-email" placeholder="Email">
+                    <span class = "error" id = "signup-email-error"></span>
+                </div>
+                <div class = "input-group">
+                    <input type="password"  id = "signup-password" placeholder = "Password">
+                    <span class = "error" id = "signup-password-error" ></span>
+                </div>
+                <div class = "input-group">
+                    <input type="password" id ="signup-confirm-password" placeholder = "Confirm Password">
+                    <span class = "error" id ="signup-confirm-password-error"></span>
+                </div>
+                <button type = "submit">Sign Up</button>
+                <p>Already have an account? <a href="#" onclick = "switchForm('login')">Log In</a></p>
+
+            </form>
+
+        </div>
+
+
+    </div>
+    
+
+
+<script src="script.js"></script>
+</body>
+</html>
